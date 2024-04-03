@@ -11,13 +11,14 @@ import jakarta.inject.Named;
 
 /**
  * Backing bean des pages formulaire_1.xhtml et affichage_1.xhtml
+ *
  * @author Rotsy
  */
 @Named(value = "bean")
 @RequestScoped
 public class Bean {
 
-     private int nombre;
+    private int nombre;
 
     public int getNombre() {
         return nombre;
@@ -35,5 +36,9 @@ public class Bean {
         }
         return l;
     }
-    
+
+    public String afficher() {
+        return "affichage_3?nb=" + nombre + "&amp;faces-redirect=true";
+    }
+
 }
