@@ -10,13 +10,13 @@ import java.util.List;
 import jakarta.inject.Named;
 
 /**
- * Backing bean des pages formulaire_X.xhtml et affichage_X.xhtml
+ * Backing bean des pages formulaire_4.xhtml et affichage_4.xhtml
  *
  * @author Rotsy
  */
-@Named(value = "bean")
+@Named(value = "newbean")
 @RequestScoped
-public class Bean {
+public class NewBean {
 
     private int nombre;
 
@@ -38,7 +38,7 @@ public class Bean {
     }
 
     public String afficher() {
-        return "affichage_3?nb=" + nombre + "&amp;faces-redirect=true";
+        return "affichage_4?nb=" + nombre + "&amp;faces-redirect=true";
     }
 
 }
